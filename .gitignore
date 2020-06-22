@@ -107,4 +107,3 @@ venv.bak/
 .DS_Store
 .vscode/
 
-crawler_news/settings.py
