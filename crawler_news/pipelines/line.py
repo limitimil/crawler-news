@@ -56,7 +56,7 @@ class LineNotifyPipeline(object):
         if self.redis.get(item.get('url')):
             return item
 
-        # self.redis.set('key_words', json.dumps(['Hello world!'], ensure_ascii=False))
+        self.redis.set('key_words', json.dumps(['Hello world!'], ensure_ascii=False))
 
         key_words = json.loads(self.redis.get('key_words'))
 
